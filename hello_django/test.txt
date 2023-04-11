@@ -1,0 +1,3 @@
+Here are any necessary lines to be entered into the terminal:
+
+python manage.py runserver          <- replaced by json file
