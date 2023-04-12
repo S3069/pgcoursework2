@@ -1,3 +1,6 @@
 Here are any necessary lines to be entered into the terminal:
-This is also a test file to check if files are being properly pushed to the repo
+
 python manage.py runserver          <- replaced by json file
+
+This is also a test file to check if files are being properly pushed to the repo
+Test 2
