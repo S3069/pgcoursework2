@@ -16,7 +16,7 @@
             "args": [
                 "runserver"                                 // "args": ["runserver"],       Can add "5000" here if port 5000 is wanted
             ],
-            "django": true,                                 // "django": true,              Enables debugging of Django page templates
+            "django": true,                                 // "django": true,              Enables debugging of Django page templates, shows error pages
             "justMyCode": true
         }
     ]
