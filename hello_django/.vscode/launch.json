@@ -11,12 +11,12 @@
         {
             "name": "Python: Django",
             "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",     // This tells VS Code to run manage.py using the selected Py interpreter + arguments in "args" list.
+            "request": "launch", 
+            "program": "${workspaceFolder}\\manage.py",     // "program": "${workspaceFolder}\\manage.py",      This tells VS Code to run manage.py using the selected Py interpreter + arguments in "args" list.
             "args": [
-                "runserver"                                 // Can add "5000" here if port 5000 is wanted
+                "runserver"                                 // "args": ["runserver"],       Can add "5000" here if port 5000 is wanted
             ],
-            "django": true,                 // Enables debugging of Django page templates
+            "django": true,                                 // "django": true,              Enables debugging of Django page templates
             "justMyCode": true
         }
     ]
