@@ -14,7 +14,7 @@ def home(request):
 
 def hello_there(request, name):
     now = datetime.now()
-    formatted_now = now.strftime("%A, %d %B, %Y at %X")
+    formatted_now = now.strftime("%a, %d %b, %Y at %X")         # (Capitalise a, b, or y to output full date, month, year format) 
 
     # Filter the name argument to letters only using regular expressions. URL arguments
     # can contain arbitrary text, so we restrict to safe characters only.
