@@ -8,10 +8,13 @@
 import re
 from django.utils.timezone import datetime
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
     return HttpResponse("Hello, Django!")
 
+'''
+# Old hello_there function to display plain text webpage
 def hello_there(request, name):
     now = datetime.now()
     formatted_now = now.strftime("%a, %d %b, %Y at %X")         # (Capitalise a, b, or y to output full date, month, year format) 
@@ -27,3 +30,15 @@ def hello_there(request, name):
 
     content = "Hello there, " + clean_name + "! It's " + formatted_now
     return HttpResponse(content)
+'''
+
+# New hello_there function to render page with a template
+def hello_there(request, name):
+    return render(
+        request,
+        'hello/hello_there.html',
+        {
+            'name': name,
+            'date': datetime.now()
+        }
+    )

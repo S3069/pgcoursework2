@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello',                                # The app should now be able to handle templating
 ]
 
 MIDDLEWARE = [
