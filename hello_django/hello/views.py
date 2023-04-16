@@ -10,8 +10,10 @@ from django.utils.timezone import datetime
 from django.http import HttpResponse
 from django.shortcuts import render
 
+'''
 def home(request):
     return HttpResponse("Hello, Django!")
+'''
 
 '''
 # Old hello_there function to display plain text webpage
@@ -42,3 +44,13 @@ def hello_there(request, name):
             'date': datetime.now()
         }
     )
+
+# Replaced the existing home function with the one below
+def home(request):
+    return render(request, "hello/home.html")
+
+def about(request):
+    return render(request, "hello/about.html")
+
+def contact(request):
+    return render(request, "hello/contact.html")
