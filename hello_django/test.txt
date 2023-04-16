@@ -6,3 +6,6 @@ This is also a test file to check if files are being properly pushed to the repo
 Test 2
 
 Open "http://127.0.0.1:8000/hello/VSCode" instead of "http://127.0.0.1:8000/"
+
+In practice, run "python manage.py collectstatic" any time you change static files and before deploying into production.
+This copies 'hello/site.css' into 'static_collected' folder
