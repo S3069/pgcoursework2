@@ -11,10 +11,13 @@
 
 <body>
 <div class="navbar">
-    <! Djangorefers to other pages using the names of the corresponding URL patterns, not by relative path. e.g. {% url 'home' %}>
+    <!-- Djangorefers to other pages using the names of the corresponding URL patterns, not by relative path. e.g. {% url 'home' %}-->
     <a href="{% url 'home' %}" class="navbar-brand">Home</a>
     <a href="{% url 'about' %}" class="navbar-item">About</a>
     <a href="{% url 'contact' %}" class="navbar-item">Contact</a>
+
+    <!-- Insert below the link to Home -->
+<a href="{% url 'log' %}" class="navbar-item">Log Message</a>
 </div>
 
 <div class="body-content">

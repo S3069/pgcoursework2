@@ -31,3 +31,14 @@
     padding: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* INPUT FORM */
+input[name=message] {
+    width: 80%;
+}
+
+/* HOPE PAGE */
+.message_list th,td {
+    text-align: left;
+    padding-right: 15px;
+}

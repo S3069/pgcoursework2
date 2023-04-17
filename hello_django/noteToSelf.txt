@@ -1,0 +1,16 @@
+Here are any necessary lines to be entered into the terminal:
+
+python manage.py runserver          <- replaced by json file
+
+This is also a test file to check if files are being properly pushed to the repo
+Test 2
+
+Open "http://127.0.0.1:8000/hello/VSCode" instead of "http://127.0.0.1:8000/"
+
+In practice, run "python manage.py collectstatic" any time you change static files and before deploying into production.
+This copies 'hello/site.css' into 'static_collected' folder
+
+When working with models...
+(1) Make changes to the models in your 'models.py' file.
+(2) Run "python manage.py makemigrations" to generate scripts in the migrations folder that migrate the database from its current state to the new state.
+(3) Run "python manage.py migrate" to apply the scripts to the actual database.
